@@ -3695,6 +3695,9 @@ span.block {
 }
 
 @media screen and (max-width: 991px) {
+  .main-menu__dropdown {
+    display: none !important;
+  }
   .clinic-content__caption_text {
     left: 25px;
     top: calc(50% - 45px);

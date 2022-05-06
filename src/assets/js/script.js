@@ -29,10 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.querySelector('body').addEventListener('click', e =>{
         if (e.target.closest('.search-button')) {
-            document.querySelector('.search-block').classList.add('show');
+            $('.search-block').fadeIn(300);
+            // document.querySelector('.search-block').classList.add('show');
         }
         if (!e.target.closest('.search-block') && !e.target.closest('.search-button')) {
-            document.querySelector('.search-block').classList.remove('show');
+            $('.search-block').fadeOut(300);
+            // document.querySelector('.search-block').classList.remove('show');
         }
         if ( document.querySelector('.select-block-link')) {
             // e.preventDefault();
