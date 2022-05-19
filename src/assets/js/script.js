@@ -213,4 +213,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
    
     $("#phone").mask("+9 (999) 999 - 99 - 99");
+
+
+    $('.green-line__close').click(function (e) {
+        e.preventDefault();
+        $('.green-line').slideUp(400);
+    });
 });
